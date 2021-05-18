@@ -1,0 +1,22 @@
+
+
+
+
+
+<div id="maxSize" >
+<img id="maxImg"/>
+<button id="closeCursor" (click)="CloseImg()">X</button>
+<h1 id="ImgTitle"></h1>
+
+</div>
+
+<div id="v">
+ <div id="FlexImg" *ngFor="let i of galery" style="display: block;position:relative;">
+     <span id="item" class="item"><img src="{{i.image}}" (click)="closeDisplay(i)"/>
+        <h3>{{i.title}}</h3>
+        <p>{{i.author}}</p>
+        <p>{{i.yearOfCreate}}</p>
+    </span>
+</div>
+
+</div>
